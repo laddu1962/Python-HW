@@ -1,22 +1,8 @@
-Xlist = ['mix', 'xyz', 'apple', 'xanadu', 'rovio']
-newlist = []
-sort = []
+Yl = ["xxx", "aaa", "r5t6yy", "g", 'wow']
+counter = 0
 
-for i in Xlist:
-    if i[0][0] == 'x':
-        newlist.append(i)
+for i in Yl:
+    if i[0][0] == i[-1] and len(i) >= 2:
+        counter = counter +1
 
-newlist = sorted(newlist)
-
-for i in Xlist:
-    if i[0][0] != 'x':
-        sort.append(i)
-
-sort = sorted(sort)
-
-for i in sort:
-    newlist.append(i)
-
-print(newlist)
-
-
+print(counter)
